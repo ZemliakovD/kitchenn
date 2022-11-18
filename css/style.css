@@ -242,6 +242,11 @@ a{
     max-height: 449px;
 }
 
+.banner-img{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 .problems{
     background: rgba(246, 246, 246, 0.96);
     margin-bottom: 100px;
@@ -258,6 +263,10 @@ a{
     max-width: 455px;
     max-height: 410px;
     margin-right: 115px;
+}
+
+.ploblems-banner{
+    border-radius: 10px;
 }
 
 .problems-title{
@@ -303,7 +312,6 @@ a{
 .htm-title{
     font-size: 30px;
     text-transform: uppercase;
-    font-weight: bold;
     margin-bottom: 40px;
 }
 
@@ -320,6 +328,11 @@ a{
 .htw-banner{
     max-width: 550px;
     max-height: 463px;
+}
+
+.htw-photo{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .free{
@@ -366,13 +379,27 @@ a{
     width: 250px;
     padding: 15px;
     outline: none;
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .form-check{
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+}
+
+.form-check-button{
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    border-radius: 10px ;
+    transition: all .5s;
+}
+
+.form-check-button:hover{
+    color: #fff !important;
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
 }
 
 .form-check-label{
@@ -383,15 +410,6 @@ a{
 
 .form-check-input{
     margin-right: 10px;
-}
-
-.form-check-button{
-    border-radius: 0;
-    border: 1px solid #fff;
-}
-
-.form-check-button:hover{
-    background-color: #fff;
 }
 
 .btn{
@@ -425,6 +443,13 @@ a{
 .steps-wrap{
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+.steps-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;   
 }
 
 .step{
@@ -461,6 +486,12 @@ a{
 
 .steps-bottom{
     margin-left: 180px;
+    margin-bottom: 60px;
+}
+
+.steps-more{
+    display: flex;
+    justify-content: center;
 }
 
 .works{
@@ -717,7 +748,11 @@ a{
 }
 
 .card-list-inner{
-    display: flex;
+    margin-bottom: 35px;
+}
+
+.card-list-description{
+    margin-bottom: 15px;
 }
 
 .list-top{
@@ -1202,6 +1237,7 @@ a{
         width: 100%;
         flex-direction: column;
         margin-bottom: 30px;
+        min-width: 100% !important;
     }
 
     .step-number{
