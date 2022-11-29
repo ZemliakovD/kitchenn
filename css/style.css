@@ -494,6 +494,50 @@ a{
     justify-content: center;
 }
 
+.advantagr-wrapper{
+    padding-top: 50px;
+}
+
+.advantager-plates{
+    margin-bottom: 70px;
+}
+
+.plates-inner{
+    display: flex;
+    align-items: center;
+}
+
+.plate-item{
+    width: 25%;
+    background: #FFFFFF;
+    box-shadow: 10px 4px 30px rgb(0 0 0 / 8%);
+    border-radius: 10px;
+    margin-right: 25px;
+    min-height: 280px;
+}
+
+.plate-item:last-child{
+    margin-right: 0;
+}
+
+.plate-inem-content{
+    padding: 25px;
+}
+
+.plate-title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+
+.plate-list{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 110px;
+}
+
 .works{
     margin-bottom: 100px;
 }
