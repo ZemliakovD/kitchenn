@@ -1035,6 +1035,13 @@ a{
     margin-right: 0;
 }
 
+.descriprtion-title{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 57px;
+    text-transform: uppercase; 
+}
+
 @media (max-width:576px){
 
     .header{
