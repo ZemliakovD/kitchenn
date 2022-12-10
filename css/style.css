@@ -303,11 +303,19 @@ a{
 .htm-wrap{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .htw-content{
     margin-right: 115px;
+    width: 50%;
 }
+
+.htw-banner{
+    width: 50%;
+}
+
+
 
 .htm-title{
     font-size: 30px;
@@ -967,14 +975,19 @@ a{
 
 .modal-form-button{
     display: block;
-    border-radius: 0;
+    border-radius: 10px;
     margin: 0 auto;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #000 !important;
 }
 
 .modal-form-button:hover{
-    background-color: #fff;
+    background-color: transparent;
     border: none;
-    color: #000;
+    color: #fff !important;
+    border: 1px solid #fff !important;
 }
 
 .btn-close{
