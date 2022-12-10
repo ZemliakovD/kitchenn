@@ -17,6 +17,36 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <h3 class="modal-form-title">Есть попрос?</h3>
+                            <p class="modal-form-text">Оставьте контакт и мы с Вами свяжемся</p>
+                            <div class="modal-label-wrap">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control modal-form-block" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваше имя">
+                                  </div>
+                                  <div class="mb-3">
+                                    <input type="password" class="form-control modal-form-block" id="exampleInputPassword1" placeholder="Ваш телефон">
+                                  </div>    
+                            </div>
+                            <div class="mb-3 modal-form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Я соглашаюсь на обработку личных данных и политику конфиденциальности</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary modal-form-button">Отправить заявку</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+    </div>
   
     <header class="header kraska-color">
         <div class="container">
@@ -66,7 +96,7 @@
                     <div class="main-content">
                         <h1 class="main-tilte title">Покраска мебели в Минске <br> для всей Беларуси</h1>
                         <p class="main-text">Красим мебель и ее детали по современным технологиям в покрасочной камере.</p>
-                        <button class="main-button button">Заказать</button>
+                        <button class="main-button button" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать</button>
                     </div>
                     <div class="main-banner">
                         <img src="img/pokraska/main-banner.jpg" alt="Фото кухни" class="banner-img">
@@ -146,7 +176,9 @@
                         </div>
                     </div>
                     <div class="htw-banner">
-                        <img src="img/pokraska/htw-kraska.jpg" alt="Наша работа" class="htw-photo">
+                        <video width="100%" controls="controls" poster="img/pokraska/htw-kraska.jpg">
+                            <source src="img/pokraska/kraska.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                           </video>
                     </div>
                 </div>
             </div>
