@@ -1,12 +1,21 @@
-const panels = document.querySelectorAll('.panel');
-panels.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses();
-        panel.classList.add('active');
-    });
+$(function(){
+    $('.products-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+      });
 });
-function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active');
-    });
-}
+
+let isVisible = true;
+const div = document.getElementById('ts1');
+
+function trigger() {
+  isVisible = !isVisible;
+  div.style.display = isVisible ? "block" : "none";
+};
+
+document
+  .getElementById('push')
+  .addEventListener('click', trigger);

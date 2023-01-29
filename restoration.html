@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Изготовление и ремонт кухни и кухонной мебели | Минск</title>
+  <title>Реставрация мебели | Ремонт мебели в Минске</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,10 +32,10 @@
                   </a>
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
                     <li class="nav-item menu-list-item">
-                      <a href="index.html" class="menu-list-link nav-link active" aria-current="page">Главная</a>
+                      <a href="index.html" class="menu-list-link nav-link">Главная</a>
                     </li>
                     <li class="nav-item menu-list-item">
-                      <a href="restoration.html" class="menu-list-link nav-link">Реставрация</a>
+                      <a href="restoration.html" class="menu-list-link nav-link active" aria-current="page">Реставрация</a>
                     </li>
                     <li class="nav-item menu-list-item">
                       <a href="kuhni.html" class="menu-list-link nav-link">Кухни</a>
@@ -53,15 +53,21 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <h5 class="modal-title item-title" id="staticBackdropLabel">Заказать обратный звонок</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            ...
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
+                            <form class="order-form">
+                              <div class="order-form-area">
+                                <div class="mb-3 order-form-row">
+                                  <input type="text" class="form-control order-form-input" id="formGroupExampleInput" placeholder="Как Вас зовут?">
+                                </div>
+                                <div class="mb-3 order-form-row">
+                                  <input type="text" class="form-control order-form-input" id="formGroupExampleInput" placeholder="Ваш телефон">
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary button order-form-button" data-bs-dismiss="modal">Связаться с нами</button>
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -76,17 +82,17 @@
     </div>
   </header>
 
-  <section class="main">
+  <section class="main restoration">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="main-inner">
             <div class="main-content">
               <h1 class="main-title title">
-                Изготовление и ремонт кухонь
+                Реставрация и ремонт мебели
               </h1>
-              <p class="main-subtitle">В Минске и по Беларуси</p>
-              <p class="main-description">Профессиональный и грамотный подход к Вашей мебели</p>
+              <p class="main-subtitle">В Минске</p>
+              <p class="main-description">Обновите Вашу кухню и сэкономьте свой бюджет</p>
               <button type="button" class="btn btn-primary button main-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оставить заявку</button>
               <!-- Modal -->
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -119,65 +125,53 @@
         <div class="col-12">
           <div class="products-inner">
             <div class="products-content">
-              <h2 class="products-title subtitle">Что мы делаем</h2>
+              <h2 class="products-title subtitle">Почему нужно выбрать нас</h2>
               <div class="products-slider">
                 <div class="products-slider-item col-6">
                   <div class="products-card">
                     <div class="cards-banner">
-                      <img src="img/door.png" alt="Ремонт кухни в Минске" class="cards-img">
+                      <img src="img/fasad/f-advntg1.png" alt="Ремонт кухни в Минске" class="cards-img">
                     </div>
                     <div class="cards-content">
-                      <h3 class="cards-title">Реставрация кухонь</h3>
-                      <p class="cards-description">Подарим вторую жизнь Вашей кухне, при этом сэкономив большую часть Вашего бюджета<div class=""></div></p>
-                      <a href="restoration.html" class="cards-link">Узнать подробнее</a>
+                      <h3 class="cards-title">Собственное производство</h3>
+                      <p class="cards-description">Свое производтсво фасадов с нуля в самом центре Минска</p>
+                      <a href="#" class="cards-link">Заказать</a>
                     </div>
                   </div>
                 </div>
                 <div class="products-slider-item col-6">
                   <div class="products-card">
                     <div class="cards-banner">
-                      <img src="img/fasad.png" alt="Ремонт фасадо кухни в Минске" class="cards-img">
+                      <img src="img/fasad/f-advntg2.png" alt="Ремонт фасадо кухни в Минске" class="cards-img">
                     </div>
                     <div class="cards-content">
-                      <h3 class="cards-title">Изготовление фасадов</h3>
-                      <p class="cards-description">Новые фасады для Ваших кухонь по индивидуальному заказу и дизайну!</p>
-                      <a href="fasady.html" class="cards-link">Узнать подробнее</a>
+                      <h3 class="cards-title">Большой опыт работы</h3>
+                      <p class="cards-description">Более 10 лет изготавливаем фасады и кухни</p>
+                      <a href="#" class="cards-link">Заказать</a>
                     </div>
                   </div>
                 </div>
                 <div class="products-slider-item col-6">
                   <div class="products-card">
                     <div class="cards-banner">
-                      <img src="img/kitch.png" alt="Кухни на заказ в Минске" class="cards-img">
+                      <img src="img/fasad/f-advntg3.png" alt="Кухни на заказ в Минске" class="cards-img">
                     </div>
                     <div class="cards-content">
-                      <h3 class="cards-title">Новые кухни</h3>
-                      <p class="cards-description">Новые кухни по иднивидуальному проекту для любого помещения</p>
-                      <a href="kithen.html" class="cards-link">Узнать подробнее</a>
+                      <h3 class="cards-title">Качественные материалы</h3>
+                      <p class="cards-description">Сертифицированные материалы из ЕС и США</p>
+                      <a href="#" class="cards-link">Заказать</a>
                     </div>
                   </div>
                 </div>
                 <div class="products-slider-item col-6">
                   <div class="products-card">
                     <div class="cards-banner">
-                      <img src="img/shkaf.png" alt="Шкафы на заказ в Минске" class="cards-img">
+                      <img src="img/fasad/f-advntg4.png" alt="Шкафы на заказ в Минске" class="cards-img">
                     </div>
                     <div class="cards-content">
-                      <h3 class="cards-title">Новые шкафы</h3>
-                      <p class="cards-description">Изготовление шкафчиков для Вашей кухни по индивидуальным параметрам.</p>
-                      <a href="shkaf.html" class="cards-link">Узнать подробнее</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="products-slider-item col-6">
-                  <div class="products-card">
-                    <div class="cards-banner">
-                      <img src="img/kraska.png" alt="Покраска мебели в Минске" class="cards-img">
-                    </div>
-                    <div class="cards-content">
-                      <h3 class="cards-title">Покраска мебели</h3>
-                      <p class="cards-description">Вернем Вашей мебели ее первозданный види цвет</p>
-                      <a href="kraska.html" class="cards-link">Узнать подробнее</a>
+                      <h3 class="cards-title">Гарантия на изделие</h3>
+                      <p class="cards-description">100% гарантия на все изделия и работы</p>
+                      <a href="#" class="cards-link">Заказать</a>
                     </div>
                   </div>
                 </div>
@@ -194,17 +188,17 @@
       <div class="row">
         <div class="col-12">
           <div class="catalog-inner">
-            <h2 class="catalog-title subtitle">Популярные направления</h2>
+            <h2 class="catalog-title subtitle">Что мы реставрируем:</h2>
             <div class="catalog-content">
               <ul class="nav nav-pills mb-3 catalog-tabs" id="pills-tab" role="tablist">
                 <li class="nav-item catalog-tabs-item" role="presentation">
-                  <button class="nav-link active catalog-tabs-button" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Кухни</button>
+                  <button class="nav-link active catalog-tabs-button" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Изделия</button>
                 </li>
                 <li class="nav-item catalog-tabs-item" role="presentation">
-                  <button class="nav-link catalog-tabs-button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Фасады</button>
+                  <button class="nav-link catalog-tabs-button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Материалы</button>
                 </li>
                 <li class="nav-item catalog-tabs-item" role="presentation">
-                  <button class="nav-link catalog-tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Шкафы</button>
+                  <button class="nav-link catalog-tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Покрытия</button>
                 </li>
               </ul>
               <div class="tab-content catalog-tabs-content" id="pills-tabContent">
@@ -212,51 +206,25 @@
                   <div class="restoration-row">
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Кухни</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card1.png" alt="" class="restoration-card-img">
+                        <img src="img/restoration/izdelie-1.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Шкафы</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card2.png" alt="" class="restoration-card-img">
+                        <img src="img/restoration/izdelie-2.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Стулья</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card3.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="restoration-row">
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card4.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card5.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card6.png" alt="" class="restoration-card-img">
+                        <img src="img/restoration/izdelie-3.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
@@ -264,25 +232,51 @@
                   <div class="restoration-row">
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Столы</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card7.png" alt="" class="restoration-card-img">
+                        <img src="img/restoration/izdelie-4.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Комоды</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card8.png" alt="" class="restoration-card-img">
+                        <img src="img/restoration/izdelie-5.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Кровати</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/kithen-card/k-card9.png" alt="" class="restoration-card-img">
+                        <img src="img/restoration/izdelie-6.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Двери</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/restoration/izdelie-7.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Лестницы</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/restoration/izdelie-8.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Фасады</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/restoration/izdelie-9.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
@@ -292,51 +286,25 @@
                   <div class="restoration-row">
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Массив (дерево)</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card1.png" alt="Кухня под заказ" class="restoration-card-img">
+                        <img src="img/fasad/material-1.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Шпон</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card2.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/material-2.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Фанера</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card3.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="restoration-row">
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card4.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card5.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card6.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/material-3.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
@@ -344,25 +312,25 @@
                   <div class="restoration-row">
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">МДФ</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card7.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/material-4.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">ДСП</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card8.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/material-5.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">ОСБ панели</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/fasady-card/f-card9.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/material-6.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
@@ -372,51 +340,25 @@
                   <div class="restoration-row">
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Матовая эмаль</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card1.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/pocritie-1.png" alt="Кухня под заказ" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Глянцевая эмаль</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card2.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/pocritie-2.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Матовый лак</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card3.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="restoration-row">
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card4.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card5.png" alt="" class="restoration-card-img">
-                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
-                      </div>
-                    </div>
-                    <div class="restoration-card">
-                      <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
-                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card6.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/pocritie-3.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
@@ -424,25 +366,25 @@
                   <div class="restoration-row">
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Глянцевый лак</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card7.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/pocritie-4.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Тонировка</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card8.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/pocritie-5.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
                     <div class="restoration-card">
                       <div class="restoration-card-inner">
-                        <p class="restoration-card-title">Sofia Original 50.07</p>
+                        <p class="restoration-card-title">Спецэффекты покраски</p>
                         <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
-                        <img src="img/shkaf-card/s-card9.png" alt="" class="restoration-card-img">
+                        <img src="img/fasad/pocritie-6.png" alt="" class="restoration-card-img">
                         <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
                       </div>
                     </div>
