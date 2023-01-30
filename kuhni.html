@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новые кухни в Минске | Изготовление на заказ</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header-inner">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <a class="navbar-brand logo-link" href="index.html">
+                    <img src="img/logo.png" alt="" class="logo-img">
+                  </a>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
+                    <li class="nav-item menu-list-item">
+                      <a href="index.html" class="menu-list-link nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item menu-list-item">
+                      <a href="restoration.html" class="menu-list-link nav-link">Реставрация</a>
+                    </li>
+                    <li class="nav-item menu-list-item">
+                      <a href="kuhni.html" class="menu-list-link nav-link active" aria-current="page">Кухни</a>
+                    </li>
+                    <li class="nav-item menu-list-item">
+                      <a href="shkafi.html" class="menu-list-link nav-link">Шкафы</a>
+                    </li>
+                  </ul>
+                  <div class="connection">
+                    <a href="mailto:mebel@rest.by" class="mail">mebel@rest.by</a>
+                    <a href="tel:+375296344552" class="call">+375 (29) 634-45-52</a>
+                    <button type="button" class="btn btn-primary button connection-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Обратный звонок</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main kitchen">
+    <video class="video" loop="loop" autoplay="" muted="">
+      <source src="img/kitchen/main-bg.mp4" type="video/mp4" />  
+    </video>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="main-inner">
+            <div class="main-content">
+              <h1 class="main-title title">
+                Изготовление кухни под заказ
+              </h1>
+              <p class="main-subtitle">По индивдуальному проекту</p>
+              <p class="main-description">В сжатые сроки из качественных материалов</p>
+              <button type="button" class="btn btn-primary button main-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Оставить заявку</button>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title item-title" id="staticBackdropLabel">Заказать обратный звонок</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="order-form">
+                        <div class="order-form-area">
+                          <div class="mb-3 order-form-row">
+                            <input type="text" class="form-control order-form-input" id="formGroupExampleInput" placeholder="Как Вас зовут?">
+                          </div>
+                          <div class="mb-3 order-form-row">
+                            <input type="text" class="form-control order-form-input" id="formGroupExampleInput" placeholder="Ваш телефон">
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary button order-form-button" data-bs-dismiss="modal">Связаться с нами</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="products-inner">
+            <div class="products-content">
+              <h2 class="products-title subtitle">Почему нужно выбрать нас</h2>
+              <div class="products-slider">
+                <div class="products-slider-item col-6">
+                  <div class="products-card">
+                    <div class="cards-banner">
+                      <img src="img/fasad/f-advntg1.png" alt="Ремонт кухни в Минске" class="cards-img">
+                    </div>
+                    <div class="cards-content">
+                      <h3 class="cards-title">Собственное производство</h3>
+                      <p class="cards-description">Свое производтсво фасадов с нуля в самом центре Минска</p>
+                      <a href="#" class="cards-link">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-slider-item col-6">
+                  <div class="products-card">
+                    <div class="cards-banner">
+                      <img src="img/fasad/f-advntg2.png" alt="Ремонт фасадо кухни в Минске" class="cards-img">
+                    </div>
+                    <div class="cards-content">
+                      <h3 class="cards-title">Большой опыт работы</h3>
+                      <p class="cards-description">Более 10 лет изготавливаем фасады и кухни</p>
+                      <a href="#" class="cards-link">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-slider-item col-6">
+                  <div class="products-card">
+                    <div class="cards-banner">
+                      <img src="img/fasad/f-advntg3.png" alt="Кухни на заказ в Минске" class="cards-img">
+                    </div>
+                    <div class="cards-content">
+                      <h3 class="cards-title">Качественные материалы</h3>
+                      <p class="cards-description">Сертифицированные материалы из ЕС и США</p>
+                      <a href="#" class="cards-link">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-slider-item col-6">
+                  <div class="products-card">
+                    <div class="cards-banner">
+                      <img src="img/fasad/f-advntg4.png" alt="Шкафы на заказ в Минске" class="cards-img">
+                    </div>
+                    <div class="cards-content">
+                      <h3 class="cards-title">Гарантия на изделие</h3>
+                      <p class="cards-description">100% гарантия на все изделия и работы</p>
+                      <a href="#" class="cards-link">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="catalog-inner">
+            <h2 class="catalog-title subtitle">Коллекция кухонь 2023</h2>
+            <div class="catalog-content">
+              <ul class="nav nav-pills mb-3 catalog-tabs" id="pills-tab" role="tablist">
+                <li class="nav-item catalog-tabs-item" role="presentation">
+                  <button class="nav-link active catalog-tabs-button" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Светлые тона</button>
+                </li>
+                <li class="nav-item catalog-tabs-item" role="presentation">
+                  <button class="nav-link catalog-tabs-button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Темные тона</button>
+                </li>
+                <li class="nav-item catalog-tabs-item" role="presentation">
+                  <button class="nav-link catalog-tabs-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Разные цвета</button>
+                </li>
+              </ul>
+              <div class="tab-content catalog-tabs-content" id="pills-tabContent">
+                <div class="tab-pane fade show active catalog-tabs-info" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Light 36</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-1.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Light 55</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-2.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Light 98</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-3.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Sunny Basic</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-4.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Sunny Style</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-5.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Sunny Line</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-6.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Snow Brilliant 11</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-7.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Snow Brilliant 78</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-8.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Snow Brilliant 24</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Light/light-9.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade catalog-tabs-info" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Dark Night 57</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-1.png" alt="Кухня под заказ" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Dark Night 73</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-2.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Dark Night 34</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-3.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Black Friday 99</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-4.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Black Friday 104</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-5.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Black Friday 74</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-6.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Куня Dark Moon 21</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-7.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Куня Dark Moon 78</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-8.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Куня Dark Moon 17</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Dark/dark-9.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade catalog-tabs-info" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухния Green Apple</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-1.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Spring Grass</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-2.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Yellow Submarine</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-3.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Blue Sky</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-4.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Deep Sea</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-5.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Purple Saber</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-6.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restoration-row">
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Strawberry</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-7.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Sweet Vine</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-8.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                    <div class="restoration-card">
+                      <div class="restoration-card-inner">
+                        <p class="restoration-card-title">Кухня Lazure</p>
+                        <p class="restoration-card-cost">24 500 <span class="valute">₽</span></p>
+                        <img src="img/kitchen/Color/color-9.png" alt="" class="restoration-card-img">
+                        <a href="#" class="restoration-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="order-inner">
+            <div class="order-content">
+              <div class="order-banner">
+                <img src="img/form-bg.png" alt="" class="order-img">
+              </div>
+              <div class="order-info">
+                <div class="form-inner">
+                  <h2 class="form-title subtitle">Нет нужного варианта?</h2>
+                  <p class="order-description">Оставьте контакты и мы обсудим с Вами индивидуальный проект!</p>
+                  <form class="order-form">
+                    <div class="order-form-area">
+                      <div class="mb-3 order-form-row">
+                        <input type="text" class="form-control order-form-input" id="formGroupExampleInput" placeholder="Как Вас зовут?">
+                      </div>
+                      <div class="mb-3 order-form-row">
+                        <input type="text" class="form-control order-form-input" id="formGroupExampleInput" placeholder="Ваш телефон">
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary button order-form-button">Связаться с нами</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="blog-inner">
+            <div class="blog-info">
+              <h2 class="blog-title subtitle">Новые статьи</h2>
+              <a href="blog.html" class="blog-button button">Все статьи</a>
+            </div>
+            <div class="blog-cards">
+              <div class="top-row">
+                <div class="blog-item">
+                  <div class="item-banner">
+                    <img src="img/blog-card/b-card1.png" alt="" class="item-banner-img">
+                  </div>
+                  <div class="item-content">
+                    <div class="item-content-wrapper">
+                      <h5 class="item-title">Новая кухня или рестварация - что выбрать?</h5>
+                      <p class="item-description">Когда приходит время обновления кухни, обязаельно встанет вопрос: изготовить новую кухню или обратиться за реставрацией. В нашем материале мы оценим плюсы и минусы обоих вариантов и подскажем Вам, как выбрать оптимальный вариант.</p>
+                      <div class="item-elements">
+                        <a href="#" class="item-link">Читать далее</a>
+                        <p class="item-date">14 января 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <div class="item-banner">
+                    <img src="img/blog-card/b-card2.png" alt="" class="item-banner-img">
+                  </div>
+                  <div class="item-content">
+                    <div class="item-content-wrapper">
+                      <h5 class="item-title">Кухонная мебель и фурнитура - тренды 2023 года!</h5>
+                      <p class="item-description">Задумываетесь об обновлении кухни или кухонной мебели? В нашем материале мы расскажем о том, какие дизайнерские решение популярны в 2023 году, как правильно подготовить свой проект и где искать стильную мебельную фурнитуру.</p>
+                      <div class="item-elements">
+                        <a href="#" class="item-link">Читать далее</a>
+                        <p class="item-date">17 января 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <div class="item-banner">
+                    <img src="img/blog-card/b-card3.png" alt="" class="item-banner-img">
+                  </div>
+                  <div class="item-content">
+                    <div class="item-content-wrapper">
+                      <h5 class="item-title">Покраска мебели своими руками: инструкция к действию</h5>
+                      <p class="item-description">Сегодня расскажем Вам как покрасить мебель на кухне своими руками. От выбора краски до пошаговых действий при её нанесении.</p>
+                      <div class="item-elements">
+                        <a href="#" class="item-link">Читать далее</a>
+                        <p class="item-date">15 декабря 2022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-row">
+                <div class="blog-item">
+                  <div class="item-banner">
+                    <img src="img/blog-card/b-card4.png" alt="" class="item-banner-img">
+                  </div>
+                  <div class="item-content">
+                    <div class="item-content-wrapper">
+                      <h5 class="item-title">Чек-лист: как павильно подобать встраиваемый шкаф</h5>
+                      <p class="item-description">В нашем сегодняшнем материале мы расскажем на какие параметры следует обратить внимание прии выборе встраиваемого шкафа в квартиру или дом.</p>
+                      <div class="item-elements">
+                        <a href="#" class="item-link">Читать далее</a>
+                        <p class="item-date">15 декабря 2022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <div class="item-banner">
+                    <img src="img/blog-card/b-card5.png" alt="" class="item-banner-img">
+                  </div>
+                  <div class="item-content">
+                    <div class="item-content-wrapper">
+                      <h5 class="item-title">Топ материалов для изготовления кухонных фасадов
+                      </h5>
+                      <p class="item-description">В процессе изготовления нового фасада возникает вопрос: какой матекриал использовать для этих целей. В нашем статье мы разберем самые популярные виды материалов для изготовления фасада и постараемся найти оптималное решение.</p>
+                      <div class="item-elements">
+                        <a href="#" class="item-link">Читать далее</a>
+                        <p class="item-date">15 декабря 2022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <div class="item-banner">
+                    <img src="img/blog-card/b-card6.png" alt="" class="item-banner-img">
+                  </div>
+                  <div class="item-content">
+                    <div class="item-content-wrapper">
+                      <h5 class="item-title">Кухня по заказ или готовый вариант: что выбрать?</h5>
+                      <p class="item-description">Выбор того, каким образом обновить свою кухню важный процесс, и здесь всегда возникает вопрос: делать ли кухню на заказ по индивдуальному проекту или купить готовую кухню от производителя и просто установить ее. Сегодня расскажем как принять решение.</p>
+                      <div class="item-elements">
+                        <a href="#" class="item-link">Читать далее</a>
+                        <p class="item-date">15 декабря 2022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-inner">
+            <div class="footer-left">
+              <img src="img/footer-logo.png" alt="" class="footer-logo">
+              <p class="footer-text">Фабрика G&G. 2022</p>
+              <p class="copyright">© Все права защищены</p>
+              <div class="social">
+                <img src="img/insta.png" alt="" class="socila-icon">
+                <img src="img/fb.png" alt="" class="socila-icon">
+                <img src="img/vk.png" alt="" class="socila-icon">
+              </div>
+            </div>
+            <div class="footer-center">
+              <a href="tel:+375296344552" class="footer-phone">+375 (29) 634-45-52</a>
+              <p class="metro">м. Молодежная</p>
+              <p class="adress"> г. Минск, ул. Харьковская 3А</p>
+              <a href="mailto:mebel@rest.by" class="footer-mail">mebel@rest.by</a>
+            </div>
+            <div class="footer-right">
+              <ul class="left-list">
+                <li class="left-list-item">
+                  <a href="restoration.html" class="left-list-link">Реставрация</a>
+                </li>
+                <li class="left-list-item">
+                  <a href="fasady.html" class="left-list-link">Фасады</a>
+                </li>
+                <li class="left-list-item">
+                  <a href="kraska.html" class="left-list-link">Покраска</a>
+                </li>
+                <li class="left-list-item">
+                  <a href="skafi.html" class="left-list-link">Шкафы</a>
+                </li>
+              </ul>
+              <ul class="right-list">
+                <li class="right-list-item">
+                  <a href="catalog.html" class="right-list-link">Каталог</a>
+                </li>
+                <li class="right-list-item">
+                  <a href="about.html" class="right-list-link">О нас</a>
+                </li>
+                <li class="right-list-item">
+                  <a href="blog.html" class="right-list-link">Блог</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
