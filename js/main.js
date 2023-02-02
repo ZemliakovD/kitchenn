@@ -1,3 +1,8 @@
+$('#images-demo').slickLightbox({
+  images: ['http://placekitten.com/1000/600', 'http://placekitten.com/1010/606', 'http://placekitten.com/1060/636']
+});
+
+
 $(function(){
     $('.products-slider').slick({
         slidesToShow: 2,

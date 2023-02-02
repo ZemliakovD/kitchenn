@@ -34,7 +34,7 @@ a{
 }
 
 .menu-list-item{
-    margin-right: 40px;
+    margin-right: 25px;
 }
 
 .menu-list-item:last-child{
@@ -67,6 +67,10 @@ a{
     color: #FFD6A8;
 }
 
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #FFD6A8;
+}
+
 .connection{
     display: flex;
     align-items: center;
@@ -89,10 +93,10 @@ a{
 
 .call{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 120%;
     color: #FFD6A8;
-    margin-right: 65px;
+    margin-right: 25px;
     cursor: pointer;
     transition: all .5s;
 }
@@ -103,7 +107,7 @@ a{
 
 .button{
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 140%;
     padding: 15px;
     text-transform: uppercase;
@@ -117,6 +121,13 @@ a{
 
 .button:hover{
     background: #926341;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff !important;
+    background-color: #A9845C !important;
+    border-color: #DADADA !important;
+    box-shadow: none !important;
 }
 
 .main{
@@ -139,7 +150,7 @@ a{
     background-image: url(../img/shkaf/main-bg.jpg);
 }
 
-.kitchen {
+.kitchen, .pokraska {
     background-color: #000;
     color: #fff;
     overflow: hidden;
