@@ -118,7 +118,7 @@ a{
     padding: 15px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
-    background: #A9845C;
+    background: #A9845C !important;
     border-radius: inherit;
     border: none;
     cursor: pointer;
@@ -126,7 +126,7 @@ a{
 }
 
 .button:hover{
-    background: #926341;
+    background: #926341 !important;
 }
 
 .btn-check:focus+.btn-primary, .btn-primary:focus {
