@@ -169,7 +169,7 @@ a{
     top: 50%;
     left: 50%;
     z-index: 0;
-    width: 1938px;
+    width: 100%;
     transform: translate(-50%, -50%);
     opacity: 0.5;
 }
@@ -220,6 +220,10 @@ a{
     border-radius: 0;
 }
 
+.modal-backdrop{
+    position: relative;
+}
+
 .products{
     margin-bottom: 120px;
 }
@@ -229,6 +233,41 @@ a{
     font-size: 64px;
     line-height: 64px;
     margin-bottom: 30px;
+}
+
+.slick-prew{
+    position: absolute;
+    top: 25%;
+    left: -87px;
+    background-image: url(../img/left.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.slick-next{
+    position: absolute;
+    right: -55px;
+    top: 25%;
+    background-image: url(../img/right.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.products-slider-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.3));
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.products-slider-arrow:hover{
+    background-color: #FFD6A8;
 }
 
 .products-slider-item{
@@ -342,7 +381,6 @@ a{
 .restoration-card{
     width: 33%;
     border: 1px solid #DADADA;
-    margin-right: 40px;
 }
 
 .restoration-card:last-child{
@@ -350,15 +388,36 @@ a{
 }
 
 .restoration-card-inner{
-    padding: 20px;
+    padding: 15px;
+}
+
+.restoration-card-link{
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    background-color: transparent;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.restoration-card-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .restoration-card-title{
     font-weight: 500;
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 7px;
-    min-height: 36px;
+
 }
 
 .restoration-card-cost{
@@ -366,13 +425,12 @@ a{
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.01em;
-    margin-bottom: 33px;
 }
 
 .restoration-card-img{
     display: block;
     margin: 0 auto;
-    margin-bottom: 23px;
+    width: 100%;
 }
 
 .restoration-button{
@@ -384,6 +442,9 @@ a{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #B14101;
+    border: none;
+    background-color: transparent;
+    margin: auto;
 }
 
 .restoration-button:hover{
