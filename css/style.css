@@ -769,12 +769,12 @@ a{
     line-height: 21px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #3B3937;
+    color: #fff;
 }
 
 .blog-button:hover{
     background-color: transparent;
-    color: #3B3937;
+    color: #fff;
     cursor: pointer;
     border: 1px solid rgba(68, 68, 68, 0.2);
 }
