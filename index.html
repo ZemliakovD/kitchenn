@@ -15,6 +15,30 @@
   <link rel="stylesheet" href="css/slick-lightbox.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+
+    <!-- Marquiz script start -->
+  <script>
+    (function(w, d, s, o){
+      var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+        if (document.readyState !== 'loading') Marquiz.init(o);
+        else document.addEventListener("DOMContentLoaded", function() {
+          Marquiz.init(o);
+        });
+      };
+      d.head.insertBefore(j, d.head.firstElementChild);
+    })(window, document, 'script', {
+        host: '//quiz.marquiz.ru',
+        region: 'eu',
+        id: '63e68c983b658a004b21c62b',
+        autoOpen: false,
+        autoOpenFreq: 'once',
+        openOnExit: false,
+        disableOnMobile: false
+      }
+    );
+    </script>
+  <!-- Marquiz script end -->
+
 </head>
 <body>
   <header class="header">
@@ -27,33 +51,50 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="collapse navbar-collapse menu-navbar" id="navbarTogglerDemo01">
                   <a class="navbar-brand logo-link" href="index.html">
                     <img src="img/logo.png" alt="" class="logo-img">
                   </a>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-list header-menu">
                     <li class="nav-item menu-list-item">
                       <a href="index.html" class="menu-list-link nav-link active" aria-current="page">Главная</a>
                     </li>
-                    <li class="nav-item menu-list-item">
-                      <a href="kuhni.html" class="menu-list-link nav-link">Новые кухни</a>
+                    <li class="nav-item dropdown menu-list-item">
+                      <a class="nav-link dropdown-toggle menu-list-link" data-bs-toggle="dropdown" href="catalog.html" role="button" aria-expanded="false">Каталог</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="kuhni.html">Новые кухни</a></li>
+                        <li><a class="dropdown-item" href="#">Новые шкафы и мебель</a></li>
+                        <li><a class="dropdown-item" href="#">Реставрация кухонь</a></li>
+                        <li><a class="dropdown-item" href="#">Изготовление фасадов</a></li>
+                        <li><a class="dropdown-item" href="#">Покраска мебели</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item menu-list-item">
-                      <a href="shkafi.html" class="menu-list-link nav-link">Новые шкафы и мебель</a>
-                    </li>
-                    <li class="nav-item menu-list-item">
-                      <a href="restoration.html" class="menu-list-link nav-link">Реставрация кухни</a>
-                    </li>
-                    <li class="nav-item menu-list-item">
-                      <a href="pokraska.html" class="menu-list-link nav-link">Покраска мебели</a>
-                    </li>
-                    <li class="nav-item menu-list-item">
-                      <a href="fasady.html" class="menu-list-link nav-link">Изготовление фасадов</a>
-                    </li>
-                     <li class="nav-item menu-list-item">
                       <a href="contacts.html" class="menu-list-link nav-link">Контакты</a>
                     </li>
+                    <li class="nav-item menu-list-item">
+                      <a href="blog.html" class="menu-list-link nav-link">Блог</a>
+                    </li>
                   </ul>
+                  <button class="button header-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </nav>
@@ -63,12 +104,12 @@
     </div>
   </header>
 
-  <section class="dots">
+  <section class="attention">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="dots-inner">
-            <p class="dots-text"><a href="index.html" target="_blank" class="dots-link">Главная</a></p>
+      <div class="col-12">
+        <div class="row">
+          <div class="attention-inner">
+            <marquee behavior="scroll" direction="left" class="attention-mark">Заказывайте кухню или шкаф от напрямую от проиводителя и экономьте до 30%</marquee>
           </div>
         </div>
       </div>
@@ -79,13 +120,24 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
+          <div class="dots">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="dots-inner">
+                    <p class="dots-text"><a href="index.html" target="_blank" class="dots-link">Главная</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="main-inner">
             <div class="main-content">
               <h1 class="main-title title">
-                Изготовление и ремонт мебели
+                Изготовление кухонь и корпусной мебели
               </h1>
               <p class="main-subtitle">Для квартиры и частного дома</p>
-              <p class="main-description">Оставляйте заявку на просчет прямо сейчас и получите скидку до 50% на проект</p>
+              <p class="main-description">Оставляйте заявку прямо сейчас и получите проект бесплатно</p>
               <button type="button" class="btn btn-primary button main-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Получить скидку</button>
               <!-- Modal -->
               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -199,11 +251,11 @@
               </div>
               <div class="promo-check">
                 <div class="promo-message">
-                  <h2 class="promo-title subtitle">Закажи кухню</h2>
-                  <p class="promo-message-text">прямо сейчас</p>
-                  <p class="promo-text">получите</p>
-                  <span class="promo-label">скидку 25% на проект</span>
-                  <p class="promo-text">в подарок</p>
+                  <h2 class="promo-title subtitle">Закажите</h2>
+                  <p class="promo-message-text">кухню или шкаф</p>
+                  <p class="promo-text">за 50 рублей</p>
+                  <button class="button promo-label" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
+                  <p class="promo-text">До конца акции:</p>
                 </div>
                 <div class="promo-timer">
                   <div id="countdown" class="countdown">
@@ -227,6 +279,19 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz">
+    <div class="container">
+      <div class="col-12">
+        <div class="row">
+          <div class="quiz-inner">
+            <div data-marquiz-id="63e68c983b658a004b21c62b"></div>
+            <script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '63e68c983b658a004b21c62b', buttonText: 'Конструктор кухни', bgColor: '#d34085', textColor: '#ffffff', rounded: true, shadow: 'rgba(211, 64, 133, 0.5)', blicked: true, buttonOnMobile: true})</script>
           </div>
         </div>
       </div>
@@ -644,7 +709,7 @@
       <div class="col-12">
         <div class="row">
           <div class="download-inner">
-            <h2 class="download-title subtitle">Получите бесплатно каталог кухонь <br> и консультацию дизайнера</h2>
+            <h2 class="download-title subtitle">Бесплатный замер дизайнера <br> запишитесь и сэкономьте до 30%!</h2>
             <p class="download-description">Вы узнаете <span class="bold">точную стоимость</span> вашей кухни и <span class="bold">получите каталог</span></p>
             <form class="download-form">
               <input type="text" class="form-control download-form-input" id="formGroupExampleInput" placeholder="Ваш телефон">
@@ -715,7 +780,7 @@
 
   <div class="fixedbut radiowave">
     <div class="btn-data">
-      <p class="fixedbut-text btn-text">Забрать бонус</p>
+      <button class="fixedbut-text btn-text button" data-bs-toggle="modal" data-bs-target="#exampleModal">Забрать бонус</button>
       <span class="wave"></span>
       <span class="wave"></span>
       <span class="wave"></span>
