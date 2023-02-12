@@ -1,13 +1,63 @@
 $(function(){
-    $('.products-slider').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        arrows: true,
-        prevArrow: '<button class="slick-prew products-slider-arrow"></button>',
-        nextArrow: '<button class="slick-next products-slider-arrow"></button>'
-      });
+  $('.products-slider').slick({
+      responsive: [
+        {
+          breakpoint: 390,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            autoplay: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
+      autoplay: true,
+      autoplaySpeed: 2500,
+      arrows: true,
+      prevArrow: '<button class="slick-prew products-slider-arrow"></button>',
+      nextArrow: '<button class="slick-next products-slider-arrow"></button>'
+});
 });
 
 function getTimeRemaining(endtime) {

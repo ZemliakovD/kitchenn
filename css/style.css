@@ -234,6 +234,14 @@ a{
     margin-bottom: 30px;
 }
 
+.products-slider{
+    display: block;
+}
+
+.products-slider-mobile{
+    display: none;
+}
+
 .slick-prew{
     position: absolute;
     top: 25%;
@@ -320,8 +328,11 @@ a{
     color: #B14101;
 }
 
-.promo-inner{
+.promo{
     margin-bottom: 90px;
+}
+
+.promo-inner{
     background-image: url(../img/main/promo-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -405,10 +416,6 @@ a{
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-}
-
-.quiz{
-  margin-bottom:90px;
 }
 
 .catalog{
@@ -626,18 +633,6 @@ a{
     line-height: 64px;
     letter-spacing: -0.01em;
     color: #3B3937;
-}
-
-.blog-button{
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 21px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #3B3937;
-    background: #FFFFFF;
-    border: 1px solid rgba(68, 68, 68, 0.2);
-    padding: 15px 80px;
 }
 
 .top-row, .bottom-row{
@@ -860,20 +855,6 @@ a{
     opacity: 0.6;
 }
 
-.footer-center{
-    background-image: url(../img/left-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.footer-right{
-    background-image: url(../img/right-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
 /* Страница "Статьи" */
 
 .dots{
@@ -912,6 +893,10 @@ a{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fff;
+}
+
+.b-mobile{
+    display: none;
 }
 
 .blog-button:hover{
@@ -1259,28 +1244,1576 @@ a{
     }
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .about {
-      background: url(../img/kitchen/mobile-g.jpg)
-        0 top no-repeat #0e438b;
-      -webkit-background-size: cover;
-      background-size: cover;
+@media (max-width: 480px) {
+    
+    .header-checker{
+        margin-left: auto;
+        background-color: transparent;
     }
-    .video {
-      display: none;
+
+    .navbar-toggler{
+        padding: 0;
+        border-radius: 0;
     }
-  }
-  @media (max-width: 480px) {
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../img/icons/burger-bar.png);
+    }
+
+    .header-navigator{
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    .logo-link{
+        display: none;
+    }
+
+    .menu-list-item{
+        margin-right: 0;
+    }
+
+    .attention{
+        display: none;
+    }
+
+    .main{
+        margin-bottom: 30px;
+    }
+
+    .dots{
+        display: none;
+    }
+
+    .main-content{
+        padding: 50px 5px;
+    }
+
+    .main-title{
+        font-size: 20px;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .main-subtitle{
+        font-size: 14px;
+    }
+
+    .main-description{
+        font-size: 15px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        max-width: 200px;
+    }
+
+    .products{
+        margin-bottom: 30px;
+    }
+
+    .products-card{
+        min-height: 385px;
+    }
+
+    .products-title{
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .products-slider-item{
+        margin-right: 0;
+    }
+
+    .cards-banner{
+        margin-bottom: 10px;
+    }
+
+    .cards-content{
+        text-align: center;
+    }
+
+    .cards-link{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .promo{
+        margin-bottom: 30px;
+    }
+
+    .promo-content{
+        flex-direction: column;
+    }
+
+    .promo-banner{
+        display: none;
+    }
+
+    .promo-check{
+        padding: 30px 0;
+    }
+
+    .promo-title{
+        font-size: 34px;
+    }
+
+    .promo-message-text{
+        font-size: 24px;
+    }
+
+    .promo-text{
+        font-size: 28px;
+    }
+
+    .promo-label{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .countdown-number{
+        padding: 10px 5px;
+    }
+
+    .countdown-time{
+        padding: 5px;
+    }
+
+    .countdown-text{
+        font-size: 18px;
+    }
+
+    .quiz{
+        margin-bottom: 30px;
+    }
+
+    .catalog{
+        margin-bottom: 30px;
+    }
+
+    .catalog-title{
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 37px;
+    }
+
+    .catalog-tabs{
+        margin-bottom: 30px !important;
+    }
+
+    .catalog-tabs-item{
+        width: 100%;
+    }
+
+    .restoration-row{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .restoration-card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-top{
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-title, .restoration-card-cost{
+        font-size: 16px;
+    }
+
+    .restoration-card-link{
+        min-height: fit-content;
+        margin-bottom: 15px;
+    }
+    
+    .order{
+        margin-bottom: 30px;
+    }
+
+    .order-banner{
+        display: none;
+    }
+
+    .form-inner{
+        padding: 15px;
+    }
+
+    .form-title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .order-description{
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .order-form-area{
+        display: block;
+    }
+
+    .order-form-row{
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .order-form-input{
+        padding: 10px;
+    }
+
+    .order-form-button{
+        padding: 15px 50px;
+    }
+
+    .blog{
+        margin-bottom: 30px;
+    }
+
+    .blog-info{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .blog-title{
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .blog-button{
+        display: none;
+    }
+    
+    .b-mobile{
+        display: block;
+        text-align: center;
+        padding: 10px 0px; 
+    }
+
+    .top-row, .bottom-row{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .blog-item{
+        margin-right: 0;
+        min-height: 263px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .item-content-wrapper{
+        padding: 15px;
+    }
+
+    .download{
+        margin-bottom: 30px;
+    }
+
+    .download-inner{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .download-title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .download-description{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .download-form{
+        display: block;
+    }
+
+    .download-form-input{
+        max-width: 250px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .download-form-button{
+        padding: 10px 44px;
+    }
+
+    .footer-inner{
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .footer-left, .footer-center{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-text, .copyright{
+        margin-bottom: 15px;
+    }
+
+    .footer-phone{
+        margin-bottom: 15px;
+    }
+
+    .adress{
+        max-width: 100%;
+    }
+
+    .footer-right{
+        display: block;
+        text-align: center;
+    }
+
+    .left-list{
+        margin-right: 0;
+    }
+  
     .about-title{
       font-size: 40px;
     }
+
+    .fixedbut{
+        top: 55px;
+        left: -15px;
+    }
+
+    .fixedbut-text{
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+        padding: 7px;
+    }
+
   }
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+        
+    .header-checker{
+        margin-left: auto;
+        background-color: transparent;
+    }
+
+    .navbar-toggler{
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../img/icons/burger-bar.png);
+    }
+
+    .header-navigator{
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    .logo-link{
+        display: none;
+    }
+
+    .menu-list-item{
+        margin-right: 0;
+    }
+
+    .attention{
+        display: none;
+    }
+
+    .main{
+        margin-bottom: 30px;
+    }
+
+    .dots{
+        display: none;
+    }
+
+    .main-content{
+        padding: 50px 5px;
+    }
+
+    .main-title{
+        font-size: 20px;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .main-subtitle{
+        font-size: 14px;
+    }
+
+    .main-description{
+        font-size: 15px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        max-width: 200px;
+    }
+
+    .products{
+        margin-bottom: 30px;
+    }
+
+    .products-card{
+        min-height: 385px;
+    }
+
+    .products-title{
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .products-slider-item{
+        margin-right: 0;
+    }
+
+    .cards-banner{
+        margin-bottom: 10px;
+    }
+
+    .cards-content{
+        text-align: center;
+    }
+
+    .cards-link{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .promo{
+        margin-bottom: 30px;
+    }
+
+    .promo-content{
+        flex-direction: column;
+    }
+
+    .promo-banner{
+        display: none;
+    }
+
+    .promo-check{
+        padding: 30px 0;
+    }
+
+    .promo-title{
+        font-size: 34px;
+    }
+
+    .promo-message-text{
+        font-size: 24px;
+    }
+
+    .promo-text{
+        font-size: 28px;
+    }
+
+    .promo-label{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .countdown-number{
+        padding: 10px 5px;
+    }
+
+    .countdown-time{
+        padding: 5px;
+    }
+
+    .countdown-text{
+        font-size: 18px;
+    }
+
+    .quiz{
+        margin-bottom: 30px;
+    }
+
+    .catalog{
+        margin-bottom: 30px;
+    }
+
+    .catalog-title{
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 37px;
+    }
+
+    .catalog-tabs{
+        margin-bottom: 30px !important;
+    }
+
+    .catalog-tabs-item{
+        width: 100%;
+    }
+
+    .restoration-row{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .restoration-card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-top{
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-title, .restoration-card-cost{
+        font-size: 16px;
+    }
+
+    .restoration-card-link{
+        min-height: fit-content;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+    
+    .order{
+        margin-bottom: 30px;
+    }
+
+    .order-banner{
+        display: none;
+    }
+
+    .form-inner{
+        padding: 15px;
+    }
+
+    .form-title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .order-description{
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .order-form-area{
+        display: block;
+    }
+
+    .order-form-row{
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .order-form-input{
+        padding: 10px;
+    }
+
+    .order-form-button{
+        padding: 15px 50px;
+    }
+
+    .blog{
+        margin-bottom: 30px;
+    }
+
+    .blog-info{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .blog-title{
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .blog-button{
+        display: none;
+    }
+    
+    .b-mobile{
+        display: block;
+        text-align: center;
+        padding: 10px 0px; 
+    }
+
+    .top-row, .bottom-row{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .blog-item{
+        margin-right: 0;
+        min-height: 263px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .item-content-wrapper{
+        padding: 15px;
+    }
+
+    .download{
+        margin-bottom: 30px;
+    }
+
+    .download-inner{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .download-title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .download-description{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .download-form{
+        display: block;
+    }
+
+    .download-form-input{
+        max-width: 250px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .download-form-button{
+        padding: 10px 44px;
+    }
+
+    .footer-inner{
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .footer-left, .footer-center{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-text, .copyright{
+        margin-bottom: 15px;
+    }
+
+    .footer-phone{
+        margin-bottom: 15px;
+    }
+
+    .adress{
+        max-width: 100%;
+    }
+
+    .footer-right{
+        display: block;
+        text-align: center;
+    }
+
+    .left-list{
+        margin-right: 0;
+    }
+  
+    .about-title{
+      font-size: 40px;
+    }
+
+    .fixedbut{
+        top: 55px;
+        left: -15px;
+    }
+
+    .fixedbut-text{
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+        padding: 7px;
+    }
+}
+
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .header-checker{
+        margin-left: auto;
+        background-color: transparent;
+    }
+
+    .navbar-toggler{
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../img/icons/burger-bar.png);
+    }
+
+    .header-navigator{
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    .logo-link{
+        display: none;
+    }
+
+    .menu-list-item{
+        margin-right: 0;
+    }
+
+    .attention{
+        display: none;
+    }
+
+    .main{
+        margin-bottom: 30px;
+    }
+
+    .dots{
+        display: none;
+    }
+
+    .main-content{
+        padding: 90px 5px;
+    }
+
+    .main-title{
+        font-size: 20px;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .main-subtitle{
+        font-size: 14px;
+    }
+
+    .main-description{
+        font-size: 15px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        max-width: 200px;
+    }
+
+    .products{
+        margin-bottom: 30px;
+    }
+
+    .products-card{
+        min-height: 385px;
+    }
+
+    .products-title{
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .products-slider-item{
+        margin-right: 0;
+    }
+
+    .cards-banner{
+        margin-bottom: 10px;
+    }
+
+    .cards-content{
+        text-align: center;
+    }
+
+    .cards-description{
+        max-width: 100%;
+    }
+
+    .cards-link{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .promo{
+        margin-bottom: 30px;
+    }
+
+    .promo-content{
+        flex-direction: column;
+    }
+
+    .promo-banner{
+        display: none;
+    }
+
+    .promo-check{
+        padding: 30px 0;
+    }
+
+    .promo-title{
+        font-size: 34px;
+    }
+
+    .promo-message-text{
+        font-size: 24px;
+    }
+
+    .promo-text{
+        font-size: 28px;
+    }
+
+    .promo-label{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .countdown-number{
+        padding: 10px 5px;
+    }
+
+    .countdown-time{
+        padding: 5px;
+    }
+
+    .countdown-text{
+        font-size: 18px;
+    }
+
+    .quiz{
+        margin-bottom: 30px;
+    }
+
+    .catalog{
+        margin-bottom: 30px;
+    }
+
+    .catalog-title{
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 37px;
+    }
+
+    .catalog-tabs{
+        margin-bottom: 30px !important;
+    }
+
+    .catalog-tabs-item{
+        width: 100%;
+    }
+
+    .restoration-row{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .restoration-card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-top{
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-title, .restoration-card-cost{
+        font-size: 16px;
+    }
+
+    .restoration-card-link{
+        min-height: fit-content;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+    
+    .order{
+        margin-bottom: 30px;
+    }
+
+    .order-banner{
+        display: none;
+    }
+    
+    .order-info{
+        width: 100%;
+    }
+
+    .form-inner{
+        padding: 15px;
+    }
+
+    .form-title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .order-description{
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .order-form-area{
+        display: block;
+    }
+
+    .order-form-row{
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .order-form-input{
+        padding: 10px;
+    }
+
+    .order-form-button{
+        padding: 15px 50px;
+    }
+
+    .blog{
+        margin-bottom: 30px;
+    }
+
+    .blog-info{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .blog-title{
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .blog-button{
+        display: none;
+    }
+    
+    .b-mobile{
+        display: block;
+        text-align: center;
+        padding: 10px 0px; 
+    }
+
+    .top-row, .bottom-row{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .blog-item{
+        margin-right: 0;
+        min-height: 263px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .item-content-wrapper{
+        padding: 15px;
+    }
+
+    .item-title{
+        max-width: 100%;
+    }
+
+    .item-description{
+        max-width: 100%;
+        min-height: 75px;
+    }
+
+    .download{
+        margin-bottom: 30px;
+    }
+
+    .download-inner{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .download-title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .download-description{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .download-form{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .download-form-input{
+        max-width: 325px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .download-form-button{
+        padding: 8px 44px;
+    }
+
+    .footer-inner{
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .footer-left, .footer-center{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-text, .copyright{
+        margin-bottom: 15px;
+    }
+
+    .footer-phone{
+        margin-bottom: 15px;
+    }
+
+    .adress{
+        max-width: 100%;
+    }
+
+    .footer-right{
+        display: block;
+        text-align: center;
+    }
+
+    .left-list{
+        margin-right: 0;
+    }
+  
+    .about-title{
+      font-size: 40px;
+    }
+
+    .fixedbut{
+        top: 55px;
+        left: -15px;
+    }
+
+    .fixedbut-text{
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+        padding: 7px;
+    }
+
+
+ 
+    .about {
+        background: url(../img/kitchen/mobile-g.jpg)
+          0 top no-repeat #0e438b;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+
+      .video {
+        display: none;
+      }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    
+    .header-checker{
+        margin-left: auto;
+        background-color: transparent;
+    }
+
+    .navbar-toggler{
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../img/icons/burger-bar.png);
+    }
+
+    .header-navigator{
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    .logo-link{
+        display: none;
+    }
+
+    .menu-list-item{
+        margin-right: 0;
+    }
+
+    .attention{
+        display: none;
+    }
+
+    .main{
+        margin-bottom: 30px;
+    }
+
+    .dots{
+        display: none;
+    }
+
+    .main-content{
+        padding: 115px 5px;
+    }
+
+    .main-title{
+        font-size: 20px;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .main-subtitle{
+        font-size: 14px;
+    }
+
+    .main-description{
+        font-size: 15px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        max-width: 300px;
+    }
+
+    .products{
+        margin-bottom: 30px;
+    }
+
+    .products-slider{
+        margin-bottom: 35px;
+    }
+
+    .slick-prew{
+        top: 100%;
+        left: 44%;
+    }
+
+    .slick-next{
+        top: 100%;
+        right: 45%;
+    }
+
+    .products-card{
+        min-height: 385px;
+    }
+
+    .products-title{
+        font-size: 64px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .products-slider-item{
+        margin-right: 40px;
+    }
+
+    .cards-banner{
+        margin-bottom: 10px;
+    }
+
+    .cards-content{
+        text-align: left;
+    }
+
+    .cards-description{
+        max-width: 100%;
+    }
+
+    .cards-link{
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .promo{
+        margin-bottom: 30px;
+    }
+
+    .promo-content{
+        flex-direction: column;
+    }
+
+    .promo-banner{
+        display: none;
+    }
+
+    .promo-check{
+        padding: 30px 0;
+    }
+
+    .promo-title{
+        font-size: 34px;
+    }
+
+    .promo-message-text{
+        font-size: 24px;
+    }
+
+    .promo-text{
+        font-size: 28px;
+    }
+
+    .promo-label{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .countdown-number{
+        padding: 10px 5px;
+    }
+
+    .countdown-time{
+        padding: 5px;
+    }
+
+    .countdown-text{
+        font-size: 18px;
+    }
+
+    .quiz{
+        margin-bottom: 30px;
+    }
+
+    .catalog{
+        margin-bottom: 30px;
+    }
+
+    .catalog-title{
+        font-size: 34px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 37px;
+    }
+
+    .catalog-tabs{
+        margin-bottom: 30px !important;
+    }
+
+    .catalog-tabs-item{
+        width: 33%;
+    }
+
+    .restoration-row{
+        margin-bottom: 0;
+        flex-direction: row;
+    }
+
+    .restoration-card{
+        width: 33%;
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-top{
+        margin-bottom: 15px;
+    }
+
+    .restoration-card-title, .restoration-card-cost{
+        font-size: 16px;
+    }
+
+    .restoration-card-link{
+        min-height: fit-content;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+    
+    .order{
+        margin-bottom: 30px;
+    }
+
+    .order-content{
+        flex-direction: row-reverse;
+        background: #F3F0EE;
+        align-items: center;
+    }
+
+    .order-banner{
+        display: block;
+        width: 50%;
+    }
+    
+    .order-info{
+        width: 50%;
+    }
+
+    .order-img{
+        width: 100%;
+    }
+
+    .form-inner{
+        padding: 15px;
+    }
+
+    .form-title{
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .order-description{
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 55px;
+        text-align: left;
+    }
+
+    .order-form-area{
+        display: block;
+    }
+
+    .order-form-row{
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .order-form-input{
+        padding: 10px;
+    }
+
+    .order-form-button{
+        padding: 15px 50px;
+    }
+
+    .blog{
+        margin-bottom: 30px;
+    }
+
+    .blog-info{
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .blog-title{
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .blog-button{
+        display: inline-block;
+    }
+    
+    .b-mobile{
+        display: none;
+        text-align: center;
+        padding: 10px 0px; 
+    }
+
+    .top-row, .bottom-row{
+        margin-bottom: 0;
+        flex-direction: inherit;
+    }
+
+    .blog-item{
+        margin-right: 0;
+        min-height: 100%;
+        width: 33%;
+        margin-bottom: 15px;
+    }
+
+    .item-content-wrapper{
+        padding: 15px;
+    }
+
+    .item-title{
+        max-width: 100%;
+        min-height: 69px;
+    }
+
+    .item-description{
+        max-width: 100%;
+        min-height: 136px;
+    }
+
+    .download{
+        margin-bottom: 30px;
+    }
+
+    .download-inner{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .download-title{
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .download-description{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .download-form{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .download-form-input{
+        max-width: 325px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .download-form-button{
+        padding: 8px 44px;
+    }
+
+    .footer-inner{
+        display: flex;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .footer-left, .footer-center{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-text, .copyright{
+        margin-bottom: 15px;
+    }
+
+    .footer-phone{
+        margin-bottom: 15px;
+    }
+
+    .adress{
+        max-width: 100%;
+    }
+
+    .footer-right{
+        display: flex;
+        text-align: left;
+    }
+
+    .left-list{
+        margin-right: 15px;
+    }
+  
+    .about-title{
+      font-size: 40px;
+    }
+
+    .fixedbut{
+        top: 55px;
+        left: -15px;
+    }
+
+    .fixedbut-text{
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+        padding: 7px;
+    }
+
+
+ 
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .slick-prew{
+        top: 101%;
+        left: 45%;
+    }
+
+    .slick-next{
+        right: 46%;
+        top: 101%;
+    }
+
+    .promo-banner{
+        width: 50%;
+    }
+
+    .promo-check{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .slick-prew{
+        top: 101%;
+        left: 45%;
+    }
+
+    .slick-next{
+        right: 46%;
+        top: 101%;
+    }
+
+    .promo-banner{
+        width: 50%;
+    }
+
+    .promo-stick{
+        margin-left: -13px;
+        margin-bottom: -3px;
+    }
+}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
+
+
+
+
+
+
+
